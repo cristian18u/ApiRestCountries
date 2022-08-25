@@ -4,7 +4,7 @@ Api-rest de countries usando el entorno de programacion .net core (c#) y mongodb
 
 # metodos get
 
-usamos el metodo get para acceder a todos los paises con este emponint
+usamos el metodo get para acceder a todos los paises con este endpoint
 
 https://apirest-netcore.herokuapp.com/api/countries
 ![Image text](https://res.cloudinary.com/cristian18u/image/upload/v1661463219/cris/hfxrmmiefuvyi8hlfcvl.png)
