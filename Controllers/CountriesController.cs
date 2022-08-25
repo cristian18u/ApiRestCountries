@@ -1,7 +1,5 @@
-// using BookStoreApi.Models;
 using ApiRestCountries.Models;
 using ApiRestCountries.Services;
-// using System.Text.Json;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
