@@ -106,4 +106,10 @@ public class CountriesController : ControllerBase
         }
         return "charge database";
     }
+    [HttpGet]
+    [Route("probar")]
+    public async Task<string> Probando()
+    {
+        return "hola soy cristian";
+    }
 }
