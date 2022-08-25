@@ -28,13 +28,15 @@ public class CountriesService
 
     public async Task<Country?> GetAsync(string id) =>
         await _countriesCollection.Find(x => x.Id == id).FirstOrDefaultAsync();
+    public async Task<Country?> FilterNameAsync(string name) =>
+        await _countriesCollection.Find(x => x.Name == name).FirstOrDefaultAsync();
+    public async Task CreateAsync(Country newCountry) =>
+        await _countriesCollection.InsertOneAsync(newCountry);
 
-    public async Task CreateAsync(Country newBook) =>
-        await _countriesCollection.InsertOneAsync(newBook);
-
-    public async Task UpdateAsync(string id, Country updatedBook) =>
-        await _countriesCollection.ReplaceOneAsync(x => x.Id == id, updatedBook);
+    public async Task UpdateAsync(string id, Country updateCountry) =>
+        await _countriesCollection.ReplaceOneAsync(x => x.Id == id, updateCountry);
 
     public async Task RemoveAsync(string id) =>
         await _countriesCollection.DeleteOneAsync(x => x.Id == id);
+
 }
