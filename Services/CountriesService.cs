@@ -1,5 +1,3 @@
-// using BookStoreApi.Models;
-// using ApiRestCountries.Models;
 using ApiRestCountries.Models;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
@@ -13,7 +11,7 @@ public class CountriesService
     public CountriesService(
         IOptions<ApiCountriesDataBaseSettings> countryStoreDatabaseSettings)
     {
-        var mongoClient = new MongoClient(
+        MongoClient mongoClient = new MongoClient(
             countryStoreDatabaseSettings.Value.ConnectionString);
 
         var mongoDatabase = mongoClient.GetDatabase(

@@ -103,6 +103,7 @@ public class CountriesController : ControllerBase
             pais.Flag = country.flags[0];
             if (country.capital != null) pais.Capital = country.capital[0];
             pais.Population = country.population;
+            await _countriesService.CreateAsync(pais);
         }
         return "charge database";
     }
