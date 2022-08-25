@@ -9,7 +9,7 @@ usamos el metodo get para acceder a todos los paises con este emponint
 https://apirest-netcore.herokuapp.com/api/countries
 ![Image text](https://res.cloudinary.com/cristian18u/image/upload/v1661463219/cris/hfxrmmiefuvyi8hlfcvl.png)
 
-luego para filtrar por Id, escribimos el id luego de luego del / ej:
+luego para filtrar por Id, escribimos el id luego / ej:
 https://apirest-netcore.herokuapp.com/api/countries6307e4ec337d3991748704e1
 ![Image text](https://res.cloudinary.com/cristian18u/image/upload/v1661463219/cris/dao7pszoi5pswjmla29w.png)
 
