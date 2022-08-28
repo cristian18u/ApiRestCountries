@@ -40,7 +40,7 @@ public class CountriesController : ControllerBase
     /// <summary>
     /// Crear nuevo pais
     /// </summary>
-    /// <param name="hero"></param>
+    /// <param name="newCountry"></param>
     /// <returns>A newly created TodoItem</returns>
     /// <remarks>
     /// Sample request:
