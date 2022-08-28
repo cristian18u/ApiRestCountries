@@ -14,6 +14,10 @@ public class CountriesController : ControllerBase
     public CountriesController(CountriesService countriesService) =>
         _countriesService = countriesService;
 
+    /// <summary>
+    /// Devuelve todos los paises
+    /// </summary>
+    /// <returns></returns>
     [HttpGet]
 
     public async Task<List<Country>> Get() =>
@@ -32,6 +36,25 @@ public class CountriesController : ControllerBase
         return book;
     }
 
+
+    /// <summary>
+    /// Crear nuevo pais
+    /// </summary>
+    /// <param name="hero"></param>
+    /// <returns>A newly created TodoItem</returns>
+    /// <remarks>
+    /// Sample request:
+    ///
+    ///     POST /Todo
+    ///     {
+    ///        "id": 1,
+    ///        "name": "Item #1",
+    ///        "isComplete": true
+    ///     }
+    ///
+    /// </remarks>
+    /// <response code="201">Returns the newly created item</response>
+    /// <response code="400">If the item is null</response>
     [HttpPost]
     public async Task<IActionResult> Post(Country newCountry)
     {
