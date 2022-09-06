@@ -2,6 +2,9 @@
 
 Api-rest de countries usando el entorno de programacion .net core (c#) y mongodb
 
+# Podemos mirar toda la documentacion y probar las rutas en swagger
+https://app.swaggerhub.com/apis-docs/cristian18u/Apirest-Countries/v1
+
 # metodos get
 
 usamos el metodo get para acceder a todos los paises con este endpoint
